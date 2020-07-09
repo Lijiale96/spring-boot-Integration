@@ -1,0 +1,49 @@
+#student:
+#  stu-id: 5
+#  stu-name: jerry
+#  graduated: false
+#  subject:
+#    - java
+#    - php
+#    - mysql
+#  birthday: 1995/05/12
+#  teachers:
+#    java: tom
+#    mysql: tony
+#    web: bob
+#  address:
+#    province: 广东
+#    city: 深圳
+#    street: 宝安大道
+
+atguigu.best.wishes: "圣诞快乐！"
+#logging:
+#  level:
+#    root:
+
+#logging:
+#  level:
+#    com.
+
+spring:
+  datasource:
+    name: firenay
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/project_leave?useSSL=false&useUnicode=true&characterEncoding=utf-8&rewriteBatchedStatements=true
+    username: root
+    password: 520512
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 120.79.50.189
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false  #开发的时候禁用缓存
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+logging:
+  level:
+    com.firenay.boot.mapper: debug
+#server:
+#  servlet:
+#    context-path: /fireflynay.top
